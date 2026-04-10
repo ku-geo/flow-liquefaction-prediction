@@ -78,12 +78,3 @@ The strategy trains N models with different random seeds, ranks them by LOOCV F1
 
 `checkpoints/` contains 15 pre-trained NoPatchTransformer weights selected by the mid-band strategy. Run `python predict.py` to evaluate them directly.
 
-## Citation
-
-```bibtex
-[To be added upon acceptance]
-```
-
-## License
-
-[To be determined]
