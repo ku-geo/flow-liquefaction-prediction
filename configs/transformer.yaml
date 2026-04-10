@@ -1,0 +1,26 @@
+data_path: "../data/liquefaction_dataset.npz"
+
+L: 80
+step: 10
+diff_mode: "backward"
+
+model:
+  n_in: 5
+  d_model: 32
+  n_heads: 4
+  n_layers: 2
+  dim_ff: 64
+  dropout: 0.0
+
+training:
+  epochs: 150
+  batch_size: 64
+  lr: 5.0e-4
+  weight_decay: 1.0e-4
+  grad_clip: 1.0
+
+loss:
+  thresholds: [1, 2, 5]
+  thr_weights: [3.0, 1.5, 1.0]
+  reg_cutoff: 5
+  alpha_reg: 2.0
